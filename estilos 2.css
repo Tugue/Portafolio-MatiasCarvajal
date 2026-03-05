@@ -1,0 +1,44 @@
+body {
+    font-family:Verdana, Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, footer {
+    background-color: rgb(6, 6, 47);
+    color: white;
+    padding: 10px;
+}
+
+nav a {
+    color: rgb(191, 123, 239);
+    margin: 0 10px;
+}
+nav a:hover {
+    color: rgb(8, 8, 8);
+}
+
+.container {
+    display: flex;
+    min-height: 600px;
+}
+
+main {
+    background-color: azure;
+    padding: 20px;
+    flex: 3;
+}
+
+aside {
+    padding: 20px;
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+}
